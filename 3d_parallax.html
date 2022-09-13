@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3d_parallax.css">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfun('bounce')" >Bounce</button>
+    <button onclick="myfun('scale')" >Scale</button>
+    <button onclick="myfun('rotate')" >rotate</button>
+    <div class="container">
+        <div id="box" class="box">
+            <H1>Nik</H1>
+        </div>
+    </div>
+
+<script>
+    function myfun(data) {
+        document.getElementById('box').classList.replace("box",data);
+    };
+</script>
+</body>
+</html>
